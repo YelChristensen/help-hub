@@ -1,0 +1,103 @@
+@import "../components/Shared.module.css";
+
+.card {
+  composes: card from "../components/Shared.module.css";
+}
+
+.newOpportunity {
+  max-width: 600px;
+  margin: 20px auto;
+  -webkit-animation: scale-up-top 0.3s linear;
+  animation: scale-up-top 0.3s linear;
+}
+
+@-webkit-keyframes scale-up-top {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
+  }
+}
+
+@keyframes scale-up-top {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
+  }
+}
+
+.newOpportunity h3 {
+  font-family: "Kalam";
+  font-weight: 700;
+  color: #058240;
+  margin-bottom: 20px;
+}
+
+.newOpportunity form {
+  display: flex;
+  flex-direction: column;
+}
+
+.newOpportunity form div {
+  display: flex;
+  flex-direction: row;
+}
+
+.newOpportunity label {
+  margin-bottom: 5px;
+  width: 150px;
+}
+
+.newOpportunity input,
+.newOpportunity textarea {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #87c159;
+  border-radius: 2px;
+  width: calc(100% - 170px);
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 14px;
+}
+
+.newOpportunity select {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #87c159;
+  border-radius: 2px;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 14px;
+}
+
+.newOpportunity button {
+  background-color: #058240;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+.newOpportunity button:hover {
+  background-color: #046a30;
+}
+
+@media (max-width: 722px) {
+  .newOpportunity {
+    margin: 20px;
+  }
+}

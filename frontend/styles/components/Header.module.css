@@ -1,0 +1,72 @@
+.header {
+  background-color: #058240;
+  padding: 20px 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav {
+  min-width: 1000px;
+}
+
+.navList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navItem {
+  margin: 0 10px;
+}
+
+.navItem a {
+  text-decoration: none;
+  color: #87c159;
+}
+
+.navItem a:hover {
+  color: #fee3a2;
+}
+
+.appName {
+  font-size: 30px;
+  font-family: "Oleo Script Swash Caps", serif;
+  font-weight: 700;
+  color: #f3c301;
+}
+
+@media (max-width: 1060px) {
+  .nav {
+    min-width: 100%;
+  }
+}
+
+@media (max-width: 460px) {
+  .navList {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .appName {
+    order: -1;
+    width: 100%;
+    text-align: center;
+  }
+
+  .navItem {
+    flex: 1 1 auto;
+    text-align: center;
+  }
+}
+
+@media (max-width: 350px) {
+  .header {
+    font-size: 80%;
+  }
+}

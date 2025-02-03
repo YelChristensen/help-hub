@@ -1,0 +1,74 @@
+@import "../components/Shared.module.css";
+
+.listOpportunities {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.card {
+  composes: card from "../components/Shared.module.css";
+}
+
+.card.listed {
+  height: 200px;
+}
+
+.card.selected {
+  height: fit-content;
+}
+
+.card.selected label {
+  margin-right: 7px;
+}
+
+.editButtons {
+  display: flex;
+  justify-content: space-evenly;
+  bottom: 10px;
+}
+
+.buttonPrimary {
+  composes: buttonPrimary from "../components/Shared.module.css";
+}
+
+.buttonSecondary {
+  composes: buttonSecondary from "../components/Shared.module.css";
+}
+
+.buttonPrimary:hover {
+  background-color: #fee3a2;
+  color: #058240;
+  border: 1px solid #058240;
+  padding: 9px 19px;
+}
+
+.buttonSecondary:hover {
+  background-color: #fee3a2;
+  color: #87c159;
+  border: 1px solid #87c159;
+  padding: 9px 19px;
+}
+
+@media (max-width: 1000px) {
+  .listOpportunities {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 760px) {
+  .listOpportunities {
+    grid-template-columns: 1fr;
+  }
+  .card.listed {
+    height: fit-content;
+  }
+}
+
+@media (max-width: 360px) {
+  .card.listed,
+  .card.selected {
+    font-size: 80%;
+  }
+}

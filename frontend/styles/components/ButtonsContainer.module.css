@@ -1,0 +1,62 @@
+@import "../components/Shared.module.css";
+
+.buttonsContainer {
+  display: flex;
+  justify-content: right;
+  gap: 10px;
+}
+
+.buttonSecondary {
+  composes: buttonSecondary from "../components/Shared.module.css";
+}
+
+.buttonPrimary {
+  composes: buttonPrimary from "../components/Shared.module.css";
+}
+
+.buttonPrimary:hover {
+  background-color: #fee3a2;
+  color: #058240;
+}
+
+.buttonSecondary:hover {
+  background-color: #fee3a2;
+  color: #87c159;
+}
+
+button .options {
+  position: absolute;
+  right: 0;
+  top: 35px;
+  display: none;
+}
+
+button .options.show {
+  display: block;
+  background-color: #fff;
+  width: fit-content;
+  height: fit-content;
+}
+
+button .options.show p {
+  background-color: #fff;
+  color: #87c159;
+  border: none;
+  margin: 10px 0;
+  padding: 10px 15px;
+}
+
+button .options.show p:hover {
+  color: #058240;
+}
+
+.buttonPrimary svg,
+.buttonSecondary svg {
+  margin-right: 7px;
+}
+
+@media (max-width: 460px) {
+  .buttonsContainer {
+    justify-content: center;
+  }
+}

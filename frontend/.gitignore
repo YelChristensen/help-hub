@@ -1,0 +1,12 @@
+# Node modules
+node_modules/
+
+# VSCode files
+.vscode/
+
+# .env is to be imported manually
+.env
+.env.*
+!.env.test
+
+.next/
