@@ -22,17 +22,15 @@ good-life-sorted-technical-challenge
 │   │   ├── ListOpportunities.js
 │   │   ├── LoadingSpinner.js
 │   │   ├── Opportunity.js
-│   │   └── SomeComponent.js
 │   ├── pages
 │   │   ├── _app.js
 │   │   ├── index.js
+│   │   ├── _document.js
 │   ├── styles
 │   │   ├── App.css
 │   │   ├── pages
 │   │   │   └── Index.module.css
 │   │   ├── components
-│   │   │   ├── ButtonsContainer.module.css
-│   │   │   ├── Shared.module.css
 │   ├── api
 │   │   ├── axiosInstance.js
 │   │   └── opportunities.js
